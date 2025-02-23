@@ -64,9 +64,3 @@
     column-count: 4; /* 4 columns on large screens */
   }
 }
-
-@media (min-width: 1200px) {
-  .masonry-columns {
-    column-count: 5; /* 5 columns on extra-large screens */
-  }
-}
