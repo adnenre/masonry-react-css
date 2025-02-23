@@ -47,9 +47,10 @@
   text-align: center; /* Center-align caption */
 }
 /* Responsive adjustments */
-@media (min-width: 480px) {
+
+@media (max-width: 768px) {
   .masonry-columns {
-    column-count: 2; /* 2 columns on small screens */
+    column-count: 2; /* 3 columns on medium screens */
   }
 }
 
