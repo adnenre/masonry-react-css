@@ -1,0 +1,72 @@
+/* Container for the Masonry columns */
+.masonry-columns {
+  column-count: 4; /* Number of columns */
+  column-gap: 10px; /* Space between columns */
+  padding: 20px; /* Add some padding around the grid */
+}
+
+/* Masonry item styling */
+.masonry-item {
+  display: inline-block; /* Ensure items don't break across columns */
+  width: 100%; /* Full width of the column */
+  margin-bottom: 10px; /* Space between items */
+  break-inside: avoid; /* Prevent items from breaking across columns */
+
+  border-radius: 8px; /* Rounded corners */
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for items */
+.masonry-item:hover {
+  transform: translateY(-5px); /* Slightly lift the item on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Image styling */
+.masonry-item img {
+  width: 100%; /* Full width of the item */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 6px; /* Rounded corners for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for images */
+.masonry-item img:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Caption styling */
+.masonry-item p {
+  margin-top: 10px; /* Space between image and caption */
+  font-size: 14px; /* Caption font size */
+  color: #555; /* Caption text color */
+  text-align: center; /* Center-align caption */
+}
+/* Responsive adjustments */
+@media (min-width: 480px) {
+  .masonry-columns {
+    column-count: 2; /* 2 columns on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry-columns {
+    column-count: 3; /* 3 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-columns {
+    column-count: 4; /* 4 columns on large screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .masonry-columns {
+    column-count: 5; /* 5 columns on extra-large screens */
+  }
+}
